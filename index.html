@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar y Tapas R & G</title>
+    <!-- Enlace al CSS - Asegúrate de que el archivo se llame style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER FIJO CON NAVEGACIÓN -->
+    <header class="header-fijo">
+        <nav class="nav-container">
+            <div class="nav-links">
+                <a href="#inicio">INICIO</a>
+                <a href="#carta">CARTA</a>
+            </div>
+            
+            <div class="logo-circle">
+                <h1>R&G</h1>
+            </div>
+
+            <div class="nav-links">
+                <a href="#galeria">GALERÍA</a>
+                <a href="#contacto">UBICACIÓN</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCIÓN HOME -->
+        <section id="inicio" class="hero-image">
+            <div class="hero-content">
+                <a href="#carta" class="btn-naranja">VER CARTA</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN UBICACIÓN-->
+        <section id="contacto" class="seccion-blanca">
+            <div class="contenedor-flex">
+                <div class="columna-mapa">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.041692024078!2d-3.6515174233409833!3d40.38576857144462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42251dccc2f27d%3A0x4e77c0b7b2dd8b63!2sBar%20y%20Tapas%20R%20%26%20G!5e0!3m2!1ses!2ses!4v1774955347271!5m2!1ses!2ses" 
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                <div class="columna-texto">
+                    <h2>Encuéntranos</h2>
+                    <hr class="separador">
+                    <p><strong>Dirección:</strong><br>Av. de Palomeras, 152<br>Madrid, Madrid</p>
+                    <p><strong>Teléfono:</strong><br>+34 671 45 60 58</p>
+                    <p><strong>Horario:</strong><br>Lunes a Domingo<br>9:00h - 00:00h</p>
+                    <a href="https://maps.google.com" target="_blank" class="link-google">Cómo llegar →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARRUSEL FOTOS -->
+        <section id="galeria" class="seccion-galeria">
+            <h3>Nuestras Tapas y Local</h3>
+            <div class="carrusel">
+                <div class="carrusel-item"><img src="img/nova.jpg" alt="Tapa 1"></div>
+                <div class="carrusel-item"><img src="img/nova.jpg" alt="Tapa 2"></div>
+                <div class="carrusel-item"><img src="img/nova.jpg" alt="Nuestro Local"></div>
+            </div>
+            <p class="instruccion">Desliza para ver más →</p>
+        </section>
+    </main>
+
+    <!-- FOOTER FINAL -->
+    <footer class="footer-bar">
+        <div class="footer-content">
+            <div class="logo-circle small">
+                <h1>R&G</h1>
+            </div>
+            <p>Bar y Tapas R & G</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>
