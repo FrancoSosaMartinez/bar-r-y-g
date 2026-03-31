@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bar y Tapas R & G</title>
-    <!-- Enlace al CSS - Asegúrate de que el archivo se llame style.css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- HEADER FIJO CON NAVEGACIÓN -->
+    <!-- HEADER FIJO -->
     <header class="header-fijo">
         <nav class="nav-container">
-            <div class="nav-links">
-                <a href="#inicio">INICIO</a>
-                <a href="#carta">CARTA</a>
+            <div class="nav-side">
+                <a href="#inicio" class="nav-icon"><i class="fas fa-home"></i></a>
             </div>
             
             <div class="logo-circle">
                 <h1>R&G</h1>
             </div>
 
-            <div class="nav-links">
-                <a href="#galeria">GALERÍA</a>
-                <a href="#contacto">UBICACIÓN</a>
+
+            <div class="nav-side right">
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </div>
+            
         </nav>
     </header>
 
@@ -36,7 +40,31 @@
             </div>
         </section>
 
-        <!-- SECCIÓN UBICACIÓN-->
+        <!-- SECCIÓN PROMOCIONES-->
+        <section id="promos" class="seccion-promos">
+            <h3>Ofertas y Promociones</h3>
+            <hr class="separador centrado">
+            <div class="carrusel-promos">
+                <div class="promo-item">
+                    <img src="img/promomiercoles.jpeg" alt="Flyer 1">
+                    <p class="txt-promo">¡Miércoles de Anticucho!</p>
+                </div>
+                <div class="promo-item">
+                    <img src="img/nova.jpg" alt="Flyer 2">
+                    <p class="txt-promo">Promo2</p>
+                </div>
+                <div class="promo-item">
+                    <img src="img/nova.jpg" alt="Flyer 3">
+                    <p class="txt-promo">Promo3</p>
+                </div>
+                <div class="promo-item">
+                    <img src="img/nova.jpg" alt="Flyer 4">
+                    <p class="txt-promo">Promo4</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN UBICACIÓN -->
         <section id="contacto" class="seccion-blanca">
             <div class="contenedor-flex">
                 <div class="columna-mapa">
@@ -51,7 +79,7 @@
                     <p><strong>Dirección:</strong><br>Av. de Palomeras, 152<br>Madrid, Madrid</p>
                     <p><strong>Teléfono:</strong><br>+34 671 45 60 58</p>
                     <p><strong>Horario:</strong><br>Lunes a Domingo<br>9:00h - 00:00h</p>
-                    <a href="https://maps.google.com" target="_blank" class="link-google">Cómo llegar →</a>
+                    <a href="https://maps.app.goo.gl/dfV58H5vvxrgN9xS9" target="_blank" class="link-google">Cómo llegar →</a>
                 </div>
             </div>
         </section>
@@ -60,11 +88,10 @@
         <section id="galeria" class="seccion-galeria">
             <h3>Nuestras Tapas y Local</h3>
             <div class="carrusel">
-                <div class="carrusel-item"><img src="img/nova.jpg" alt="Tapa 1"></div>
-                <div class="carrusel-item"><img src="img/nova.jpg" alt="Tapa 2"></div>
-                <div class="carrusel-item"><img src="img/nova.jpg" alt="Nuestro Local"></div>
+                <div class="carrusel-item"><img src="img/nova.jpg" alt="Foto1"></div>
+                <div class="carrusel-item"><img src="img/nova.jpg" alt="Fot2"></div>
+                <div class="carrusel-item"><img src="img/nova.jpg" alt="Foto3"></div>
             </div>
-            <p class="instruccion">Desliza para ver más →</p>
         </section>
     </main>
 
