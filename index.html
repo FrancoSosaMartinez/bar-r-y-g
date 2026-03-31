@@ -108,5 +108,16 @@
         </div>
     </footer>
 
+    <script>
+        const abrir = document.getElementById('abrir-menu');
+        const cerrar = document.getElementById('cerrar-menu');
+        const menu = document.getElementById('menu-desplegable');
+        const links = document.querySelectorAll('.menu-content a');
+
+        abrir.addEventListener('click', () => menu.style.width = "100%");
+        cerrar.addEventListener('click', () => menu.style.width = "0%");
+        links.forEach(l => l.addEventListener('click', () => menu.style.width = "0%"));
+    </script>
+
 </body>
 </html>

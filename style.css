@@ -11,6 +11,41 @@
 
 body { font-family: sans-serif; background-color: var(--blanco); color: var(--texto-oscuro); line-height: 1.6; }
 
+/* --- MENU OVERLAY */
+.menu-overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2500;
+    top: 0;
+    right: 0;
+    background-color: var(--marron-rg);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-content a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--crema-claro);
+    display: block;
+    font-weight: bold;
+}
+
+.btn-cerrar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 3.5rem;
+    color: var(--crema-claro);
+    text-decoration: none;
+}
+
 /* HEADER */
 .header-fijo {
     background-color: var(--marron-rg);
@@ -31,74 +66,32 @@ body { font-family: sans-serif; background-color: var(--blanco); color: var(--te
     max-width: 1200px;
 }
 
-.nav-side {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
+.nav-side { flex: 1; display: flex; align-items: center; }
+.nav-side.right { justify-content: flex-end; }
 
-.nav-side.right {
-    justify-content: flex-end;
-}
+.nav-icon { color: var(--crema-claro); font-size: 1.8rem; text-decoration: none; }
 
-/* Icono Casa */
-.nav-icon {
-    color: var(--crema-claro);
-    font-size: 1.8rem;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.nav-icon:hover { color: var(--naranja-rg); }
-
-/* Logo */
 .logo-circle {
-    width: 85px;
-    height: 85px;
-    border: 4px solid var(--naranja-rg);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--marron-rg);
-    flex-shrink: 0;
+    width: 85px; height: 85px; border: 4px solid var(--naranja-rg);
+    border-radius: 50%; display: flex; justify-content: center;
+    align-items: center; background-color: var(--marron-rg); flex-shrink: 0;
 }
 
 .logo-circle h1 { color: var(--naranja-rg); font-size: 1.6rem; margin: 0; }
 
-/* Menú Hamburguesa */
-.menu-toggle {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.menu-toggle .bar {
-    width: 28px;
-    height: 4px;
-    background-color: var(--crema-claro);
-    border-radius: 2px;
-}
+.menu-toggle { cursor: pointer; display: flex; flex-direction: column; gap: 5px; }
+.menu-toggle .bar { width: 28px; height: 4px; background-color: var(--crema-claro); border-radius: 2px; }
 
 /* SECCIONES */
 .hero-image {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/nova.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-size: cover; background-position: center; height: 50vh;
+    display: flex; justify-content: center; align-items: center;
 }
 
 .btn-naranja {
-    background-color: var(--naranja-rg);
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+    background-color: var(--naranja-rg); color: white; padding: 15px 30px;
+    text-decoration: none; font-weight: bold; border-radius: 5px;
 }
 
 .seccion-promos { padding: 50px 0; background-color: var(--crema-claro); text-align: center; }
@@ -108,12 +101,8 @@ body { font-family: sans-serif; background-color: var(--blanco); color: var(--te
 .carrusel-promos::-webkit-scrollbar { display: none; }
 
 .promo-item {
-    flex: 0 0 80%;
-    max-width: 400px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    overflow: hidden;
+    flex: 0 0 80%; max-width: 400px; background: white;
+    border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;
 }
 
 .promo-item img { width: 100%; height: auto; max-height: 450px; object-fit: contain; padding: 10px; }
@@ -134,3 +123,12 @@ body { font-family: sans-serif; background-color: var(--blanco); color: var(--te
 .footer-bar { background-color: var(--marron-rg); color: white; padding: 40px 20px; text-align: center; }
 .logo-circle.small { width: 50px; height: 50px; margin: 0 auto 10px; border-width: 2px; }
 .logo-circle.small h1 { font-size: 1rem; }
+
+/* --- RESPONSIVE MÓVIL --- */
+@media (max-width: 768px) {
+    .contenedor-flex { flex-direction: column; text-align: center; }
+    .columna-mapa { order: 2; }
+    .columna-texto { order: 1; }
+    .hero-image { height: 40vh; }
+    .promo-item { flex: 0 0 90%; } 
+}
