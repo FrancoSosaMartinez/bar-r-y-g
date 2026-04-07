@@ -95,7 +95,7 @@ body { font-family: sans-serif; background-color: var(--blanco); color: var(--te
 .menu-toggle { cursor: pointer; display: flex; flex-direction: column; gap: 5px; }
 .menu-toggle .bar { width: 28px; height: 4px; background-color: var(--crema-claro); border-radius: 2px; }
 
-/* SECCIONES */
+/* SECCIONES HOME */
 .hero-image {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/nova.png');
     background-size: cover; background-position: center; height: 50vh;
@@ -149,6 +149,99 @@ body { font-family: sans-serif; background-color: var(--blanco); color: var(--te
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+/* --- ESTILO CARTA --- */
+.body-carta-clara {
+    background-color: var(--crema-claro); 
+}
+
+.contenedor-carta-clara {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.titulo-carta-principal {
+    text-align: center;
+    color: var(--marron-rg);
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.seccion-lineas {
+    background-color: var(--crema-claro); 
+    border: 2px solid var(--naranja-rg); 
+    border-radius: 12px;
+    padding: 30px 20px 20px 20px;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.titulo-flotante-limpio {
+    position: absolute;
+    top: -15px; 
+    left: 20px;
+    background-color: var(--crema-claro); 
+    color: var(--naranja-rg);
+    padding: 0 15px;
+    font-size: 1.4rem;
+    font-weight: 900; 
+    border: none; 
+    letter-spacing: 1px;
+}
+
+.imagen-seccion {
+    width: 100%; 
+    height: 120px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin-top: 10px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+}
+
+.item-carta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 0;
+    border-bottom: 1px dashed rgba(80, 57, 43, 0.2);
+}
+
+.item-carta:last-child {
+    border-bottom: none;
+}
+
+.item-nombre {
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.15rem;
+    display: block;
+}
+
+.item-desc {
+    color: #666666;
+    font-size: 0.95rem;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.item-precio {
+    color: var(--naranja-rg);
+    font-weight: 900; 
+    font-size: 1.25rem; 
+}
+
+.nav-icon-volver {
+    color: var(--crema-claro);
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 /* --- RESPONSIVE MÓVIL --- */
