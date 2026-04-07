@@ -12,15 +12,15 @@
     <!-- HEADER FIJO -->
     <header class="header-fijo">
         <nav class="nav-container">
+            <!--
             <div class="nav-side">
                 <a href="#inicio" class="nav-icon"><i class="fas fa-home"></i></a>
             </div>
-            
+            -->
             <div class="logo-circle">
                 <h1>R&G</h1>
             </div>
-
-
+            <!--
             <div class="nav-side right">
                 <div class="menu-toggle">
                     <div class="bar"></div>
@@ -28,37 +28,39 @@
                     <div class="bar"></div>
                 </div>
             </div>
-            
+            -->
         </nav>
     </header>
 
-    <main>
+    <main>    
         <!-- SECCIÓN HOME -->
         <section id="inicio" class="hero-image">
             <div class="hero-content">
-                <a href="#carta" class="btn-naranja">VER CARTA</a>
+                <h2 class="titulo-hero">Tu bar de siempre</h2>
+                <p class="subtitulo-hero">Cañas, tapas y buen ambiente en Vallecas</p>
+                <a href="#promos" class="btn-naranja">VER MÁS PROMOS</a>
             </div>
         </section>
 
         <!-- SECCIÓN PROMOCIONES-->
         <section id="promos" class="seccion-promos">
-            <h3>Ofertas y Promociones</h3>
+            <h3>Lo de esta Semana:</h3>
             <hr class="separador centrado">
             <div class="carrusel-promos">
                 <div class="promo-item">
                     <img src="img/promomiercoles.jpeg" alt="Flyer 1">
-                    <p class="txt-promo">¡Miércoles de Anticucho!</p>
+                    <p class="txt-promo">¡Tu rico Anticucho!</p>
                 </div>
                 <div class="promo-item">
-                    <img src="img/nova.jpg" alt="Flyer 2">
+                    <img src="img/empty.jpg" alt="Flyer 2">
                     <p class="txt-promo">Promo2</p>
                 </div>
                 <div class="promo-item">
-                    <img src="img/nova.jpg" alt="Flyer 3">
+                    <img src="img/empty.jpg" alt="Flyer 3">
                     <p class="txt-promo">Promo3</p>
                 </div>
                 <div class="promo-item">
-                    <img src="img/nova.jpg" alt="Flyer 4">
+                    <img src="img/empty.jpg" alt="Flyer 4">
                     <p class="txt-promo">Promo4</p>
                 </div>
             </div>
@@ -74,7 +76,8 @@
                     </iframe>
                 </div>
                 <div class="columna-texto">
-                    <h2>Encuéntranos</h2>
+                    <p class="intro-contacto">¡Pásate a tomar algo con nosotros!</p>
+                    <h2>Encuéntranos en:</h2>
                     <hr class="separador">
                     <p><strong>Dirección:</strong><br>Av. de Palomeras, 152<br>Madrid, Madrid</p>
                     <p><strong>Teléfono:</strong><br>+34 671 45 60 58</p>
@@ -84,7 +87,7 @@
             </div>
         </section>
 
-        <!-- CARRUSEL FOTOS -->
+        <!-- CARRUSEL FOTOS 
         <section id="galeria" class="seccion-galeria">
             <h3>Nuestras Tapas y Local</h3>
             <div class="carrusel">
@@ -93,6 +96,7 @@
                 <div class="carrusel-item"><img src="img/nova.jpg" alt="Foto3"></div>
             </div>
         </section>
+        -->
     </main>
 
     <!-- FOOTER FINAL -->
@@ -101,23 +105,12 @@
             <div class="logo-circle small">
                 <h1>R&G</h1>
             </div>
-            <p>Bar y Tapas R & G</p>
+            <p>Bar R & G</p><p>Tu bar en Vallecas</p>
         </div>
         <div class="copyright">
             <p>&copy; 2026 Todos los derechos reservados</p>
         </div>
     </footer>
-
-    <script>
-        const abrir = document.getElementById('abrir-menu');
-        const cerrar = document.getElementById('cerrar-menu');
-        const menu = document.getElementById('menu-desplegable');
-        const links = document.querySelectorAll('.menu-content a');
-
-        abrir.addEventListener('click', () => menu.style.width = "100%");
-        cerrar.addEventListener('click', () => menu.style.width = "0%");
-        links.forEach(l => l.addEventListener('click', () => menu.style.width = "0%"));
-    </script>
 
 </body>
 </html>
